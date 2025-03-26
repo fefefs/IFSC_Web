@@ -15,8 +15,8 @@
         filter: sepia();
         border-radius: 50%;
     }
-    table,tr,td{
-        border:1px solid blue;
+    table,tr,td,caption{
+        border:2px solid blue;
         border-collapse: collapse;
     }
 
@@ -73,8 +73,9 @@
         </ul>
         <h2>Tabela</h2>
         <table>
-            <tr>
-                <td>1x1</td>
+            <caption>Nome da tabela</caption>
+            <tr><!-- Define row (linha) da tabela-->
+                <td>1x1</td><!--Define data(celula) da tabela -->
                 <td>1x2</td>
                 <td>1x3</td>
                 <td>1x4</td>
@@ -86,6 +87,30 @@
                 <td>2x4</td>
             </tr>
         </table>
+        <br>
+        <table>
+            <caption>Tabela c/ span</caption>
+            <tr>
+                <td rowspan="2">itens</td>
+                <td>1x1</td>
+                <td>1x2</td>
+                <td>1x3</td>
+            </tr>
+            <tr> 
+                <td>2x1</td>
+                <td>2x2</td>
+                <td>2x3</td>
+               
+            </tr>
+            <tr>
+                <td colspan="3">TOTAL</td>
+                <td>3x1</td>
+
+            </tr>
+        </table>
+        <br>
+        <input type = "color">
+
 
     </body>
 </html>
