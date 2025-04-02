@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0px;
+    padding: 0px;}
+    p{ display: inline-block;
+    border: 5px solid rgb(52, 116, 212);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    outline: 1px solid rgb(28, 116, 28);
+    border-radius: 50% 50% 50% 50%;
+
+    background-color: rgb(218, 187, 248);
+    background-image:url(cat-svgrepo-com.svg) ;
+    background-position: center center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    animation: rotate 5s cubic-bezier(0,1.14,1,-1.28) 0s infinite;
+    }
+
+    @keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+            width: 0px;
+            height: 0px;
+        }
+        50%{
+            width: 100px;
+            height: 100px;
+
+        }
+        100%{
+            transform: rotate(360deg);
+            width: 0px;
+            height: 0px;
+        
+    }
+}  
+
+</style>
+<body>
+    <p class="meuParagrafo">uiiaiouiiiai</p>
+    <p id="uiiai">uiiaiouiiiai</p>
+</body>
+</html>
