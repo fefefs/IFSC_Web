@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       
+        p{
+        margin-top: 50%;
+        }
+        .box{
+            text-align: center;
+            height: 100px;
+            width: 100px;
+        }
+        #box1{
+            display: relative;
+            background-color:rgb(255, 150, 150);
+            border: 1px solid rgb(255, 150, 150);
+
+        }
+        #box2{
+            position: absolute;
+            background-color:rgb(247, 236, 140);
+            border: 1px solid rgb(247, 236, 140);
+            top:50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #box3{
+            position: fixed;
+            right: 0%;
+            top: 0%;
+            background-color:rgb(178, 255, 143);
+            border: 1px solid rgb(178, 255, 143);
+
+        }
+        #box4{
+            position: fixed;
+            left: 0%;
+            bottom: 0%;
+            background-color:rgb(143, 205, 255);
+            border: 1px solid rgb(143, 205, 255);
+
+        }
+        #box5{
+            position: fixed;
+            right: 0%;
+            bottom: 0%;
+            background-color:rgb(198, 155, 253);
+            border: 1px solid rgb(198, 155, 253);
+
+        }
+
+    
+    </style>
+    
+</head>
+<body>
+    <!--<img src="GatoDwight.jpg" alt="">-->
+
+    <div class="container">
+        <div id="box1" class="box"><p>Esquerda em cima</p></div>
+        <div id="box2" class="box"><p>Centro</p></div>
+        <div id="box3" class="box"><p>Direita em Cima</p></div>
+        <div id="box4" class="box"><p>Esquerda embaixo</p></div>
+        <div id="box5" class="box"><p>Direita embaixo</p></div>
+       
+
+    </div>
+    
+</body>
+</html>
