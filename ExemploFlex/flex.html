@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .conteiner{
+            border: 1px solid blue;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height: 80lvh;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 1px solid green;
+        }
+
+        .box:hover{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam deserunt soluta porro, impedit perferendis, tenetur at vero reiciendis placeat maxime illum libero! Eius perspiciatis cumque, corporis inventore voluptatem dignissimos consequatur.</p>
+    <div class="conteiner"> 
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+        <div class="box" id="box5">box5</div>
+    </div>
+
+</body>
+</html>
