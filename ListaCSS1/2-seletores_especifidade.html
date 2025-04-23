@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*regra 1*/ li{color:red;}
+        /*regra 2*/ .churras{color:green;}
+        /*regra 3*/ .fruta{color:gray}
+        /*regra 4*/ li+li.churras{color: black;}
+        /*regra 5*/ .churras[draggable="true"]{color: magenta;}
+        /*regra 6*/ #lip1,#lip2,#lip3{color:blue}
+        /*regra 7*/ #lip3.fruta{color:orange}
+        /*regra 8*/ ol>li.churras#lip5{color:purple}
+     </style>
+  
+</head>
+<body>
+    <ol>
+        <!--item 1--> <li id="lip0">Abacaxi</li>
+        <!--item 2--> <li           class="fruta">Melão</li>
+        <!--item 3--> <li id="lip2" class="fruta">Pera</li>
+        <!--item 4--> <li id="lip3" class="fruta">Uva</li>
+        <!--item 5--> <li id="lip4" class="fruta">Maçã</li>
+        <!--item 6--> <li           class="churras">Carne</li>
+        <!--item 7--> <li           class="churras">Linguiça</li>
+        <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho</li>
+        </ol>  
+
+    <div id="explicacao">
+        <h2>Esplicação</h2>
+        <p>No exemplo a cima a regra com mais especificidade é a que será aplicada em seu devido correspondente, assim no item 1 é aplicada a regra 1 pois o item não tem nehuma especificação de id ou de classe. No item 2 será aplicada a regra 3 por ele apenas ser da classe fruta, no item 3 será aplicada a regra 6 por ela ter id = "lib2" e ser da classe fruta, já no item 4 se aplica a regra 7 por ele ter id="lib3 e ser filho de um item da classe fruta, no item 5 se aplica a regra 3 por ele ser da classe fruta e nenhuma regra mencionar seu id="lip4", os items 6 e 7 se aplica a regra 4 pois ambos são irmãos de um item com a classe churras, e o item 8 se aplicxa a regra 5 pois ele é da classe churras e é "draggable"."</p>
+    </div>
+
+     
+    
+</body>
+</html>
