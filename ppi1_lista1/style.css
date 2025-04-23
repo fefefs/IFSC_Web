@@ -1,0 +1,17 @@
+table, tr,td{
+    border: 2px dashed #054bb4;
+    color: #00255e;
+    border-collapse: collapse;
+}
+h1{
+    color: #054bb4
+}
+table caption{
+    border: 2px solid #054bb4;
+    background-color: #aeceff;
+    color: #054bb4 ;
+}
+img{
+    width: 120px;
+
+}
