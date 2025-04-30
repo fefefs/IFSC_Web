@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       
+        p{
+        margin-top: 50%;
+        }
+        .box{
+            text-align: center;
+            height: 100px;
+            width: 100px;
+        }
+        #box1{
+            display: fixed;
+            background-color:rgb(224, 0, 0);
+            border: 1px solid rgb(224, 0, 0);
+            top: 100%;
+            left: 100%;
+
+        }
+        #box2{
+            position: fixed;
+            background-color:rgb(252, 227, 0);
+            border: 1px solid rgb(252, 227, 0);
+            right: 0%;
+            top: 0%;
+            
+        }
+        #box3{
+            position: fixed;
+            right: 0%;
+            bottom: 0%;
+            background-color:rgb(14, 160, 17);
+            border: 1px solid rgb(14, 160, 17);
+
+        }
+        #box4{
+            position: fixed;
+            left: 0%;
+            bottom: 0%;
+            background-color:rgb(5, 125, 224);
+            border: 1px solid rgb(5, 125, 224);
+
+        }
+        #box5{
+            position: fixed;
+            top:50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            background-color:rgb(245, 88, 219);
+            border: 1px solid rgb(245, 88, 219);
+
+        }
+
+    
+    </style>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div id="box1" class="box"><p>Box1</p></div>
+        <div id="box2" class="box"><p>Box2</p></div>
+        <div id="box3" class="box"><p>Box3</p></div>
+        <div id="box4" class="box"><p>Box4</p></div>
+        <div id="box5" class="box"><p>Box5</p></div>
+       
+
+    </div>
+    
+</body>
+</html>
