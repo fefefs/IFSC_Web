@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>"A soma de ", A, " e ", B, " é igual a ", soma </p>
+
+    <!--<p>soma</p>-->
+
+    <script>
+       //alert("Ola mundo");
+
+       let A = prompt("Insira o número A :");
+       let B = prompt("Insira o número de B :");
+
+       console.log("A + B = "+ (A+B));
+
+       let p = document.createElement("p");
+       p.innerHTML="A + B = "+ (A+B);
+       document.body.appendChild(p);
+
+        
+
+
+    </script>
+     
+    
+</body>
+</html>
