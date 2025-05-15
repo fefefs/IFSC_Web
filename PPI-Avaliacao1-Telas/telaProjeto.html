@@ -1,258 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        
-        #A{
-            width: 80px;
-            height: 80px;
-            position: fixed;
-            left: 93%;
-            top: 3%;
-        }
-
-        #verde1{
-            position: fixed;
-            height: 20%;
-            width: 99%;
-            background-color: #BBC8BE;
-            border-radius: 15px;
-
-        }
-
-        #verde2{
-            position: fixed;
-            top: 15%;
-            left: 1%;
-            width: 98%;
-            height: 5%;
-            background-color: #98AE9C;
-            border-radius: 5px;
-        }
-
-        #barra{
-            position: fixed;
-            top: 13%;
-            left: 15%;
-            width: 98%;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 25px;
-            -webkit-text-fill-color: #386641;
-            
-        }
-
-        #quadrado{
-            position: fixed;
-            top : 5%;
-            left: 1%;
-            width: 270px;
-            height: 40px;
-            background-color: aliceblue;
-            border-radius: 5px;
-
-        }
-
-        #lupa{
-            position: fixed;
-            top : 6%;
-            left: 2%;
-            width: 25px;
-        }
-
-        #x{
-            position: fixed;
-            top : 6%;
-            left: 13%;
-            width: 20px;
-        }
-
-        #perfil{
-            position: fixed;
-            transform: translate(45%);
-            top: 23%;
-            width: 45%;
-            height: 50%;
-            background-color: #98AE9C;
-            border-radius: 15px;
-        }
-        
-
-        .escrita2{
-            position: relative;
-            left: 4%;
-            top: 10%;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 18px;
-            -webkit-text-fill-color: #000000;
-        }
-        .escrita{
-            position: relative;
-            left: 4%;
-            top: 10%;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 18px;
-            -webkit-text-fill-color:#386641;
-           
-        }
-
-        #fotoProjeto{
-            position: fixed;
-            width: 100px;
-            height: 100px;
-            background-color: #386641;
-            border-radius: 100%;
-        }
-
-        #nome{
-            position: fixed;
-            left: 17%;
-        }
-
-        #coordena{
-            position: fixed;
-            left: 17%;
-            top: 17%;
-        }
-
-        #bols{
-            position: fixed;
-            left: 17%;
-            top: 24%;
-        }
-
-        #cocoord{
-            position: fixed;
-            left: 17%;
-            top: 31%;
-        }
-
-        #inicio{
-            position: fixed;
-            left: 5%;
-            top: 38%;
-        }
-
-        #fim{
-            position: fixed;
-            left: 5%;
-            top: 45%;
-        }
-
-        #prorrogacao{
-            position: fixed;
-            left: 5%;
-            top: 52%;
-        }
-
-        #resumo{
-            position: fixed;
-            left: 5%;
-            top: 59%;
-        }
-
-        #campus{
-            position: fixed;
-            left: 50%;
-            top: 38%;
-        }
-
-        #coordenaR{
-            position: fixed;
-            left: 32%;
-            top: 17%;
-        }
-
-        #bolsR{
-            position: fixed;
-            left: 31%;
-            top: 24%;
-        }
-
-        #cocoordR{
-            position: fixed;
-            left: 35%;
-            top: 31%;
-        }
-
-        #inicioR{
-            position: fixed;
-            left: 14%;
-            top: 38%;
-        }
-
-        #fimR{
-            position: fixed;
-            left: 10%;
-            top: 45%;
-        }
-
-        #prorrogacaoR{
-            position: fixed;
-            left: 20%;
-            top: 52%;
-        }
-
-        #resumoR{
-            position: fixed;
-            left: 5%;
-            top: 64%;
-        }
-
-        #campusR{
-            position: fixed;
-            left: 59%;
-            top: 38%;
-        }
-       
-
-    </style>
 </head>
+<style>  
+ 
+body{
+    font-family: "Courier Prime Serif", "Courier New", Courier, monospace;
+    font-weight: bold;
+} 
+p{
+    margin:40px;
+    font-weight: bold;
+}
+header{         
+        color: white;       
+}
+
+h3{
+    -webkit-text-fill-color: #386641;
+}
+#container{
+    display:grid;
+    width:100lvw;
+    grid-template-columns: 95lvw ;
+    grid-template-rows: 20lvh 80lvh;
+    margin-right: 5px;
+    margin-left: 5px;   
+}
+
+#superior{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    background-color:#BBC8BE;
+    border-radius: 10px;
+}
+
+#faixa{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;  
+}
+
+#pesquisa{
+    height:50%; 
+    width: 300px;
+    margin-left: 10px; 
+    margin-top: 30px;
+    background-color: white; 
+    border-radius: 5px;
+}
+
+#barra{
+    display:grid;
+    grid-template-columns: 10% 1% 13% 1% 17% 1% 16% 1% 12% 1% 25% ;
+    grid-template-rows: 30px;
+    border: 1px solid #98AE9C;
+    border-radius: 8px;
+    margin: 8px;
+    background-color: #98AE9C;
+}
+
+#barra > div{
+    text-align: center;
+    -webkit-text-fill-color:#386641;
+    justify-content: space-around;
+    margin: 10px;    
+}
+
+.linha{
+    height:80%;
+    width:2px;
+    background-color:#386641;
+}
+.linhaA{
+    margin-top: 30px;
+    margin-inline: 20px;
+    height:2px;
+    width:45%;
+    background-color:#386641;
+}
+
+#inferior{
+
+    background-color: #ffffff;
+}
+#perfil{
+    position: absolute;
+    transform: translate(55%);
+    top: 22%;
+    width: 45%;
+    height: 50%;
+    background-color: #98AE9C;
+    border-radius: 15px;
+}
+
+#fotoProjeto{
+    position: absolute;
+    top:8%;
+    left: 1%;
+    width: 100px;
+    height: 100px;
+    background-color: #386641;
+    border-radius: 100%;
+    }
+
+#nome{
+    position: absolute;
+    left: 17%;
+    top:10%
+}
+
+#coordena{
+    position: absolute;
+    left: 17%;
+    top: 17%;
+}
+
+#bols{
+    position: absolute;
+    left: 17%;
+    top: 24%;
+}
+
+#cocoord{
+    position: absolute;
+    left: 17%;
+    top: 31%;
+}
+
+#inicio{
+    position: absolute;
+    left: 5%;
+    top: 38%;
+}
+
+#fim{
+    position: absolute;
+    left: 5%;
+    top: 45%;
+}
+
+#prorrogacao{
+    position: absolute;
+    left: 5%;
+    top: 52%;
+}
+
+#resumo{
+    position: absolute;
+    left: 5%;
+    top: 59%;
+}
+
+#campus{
+    position: absolute;
+    left: 50%;
+    top: 38%;
+}
+
+#coordenaR{
+    position: absolute;
+    left: 32%;
+    top: 17%;
+}
+
+#bolsR{
+    position: absolute;
+    left: 31%;
+    top: 24%;
+}
+
+#cocoordR{
+    position: absolute;
+    left: 35%;
+    top: 31%;
+}
+
+#inicioR{
+    position: absolute;
+    left: 14%;
+    top: 38%;
+}
+
+#fimR{
+    position: absolute;
+    left: 10%;
+    top: 45%;
+}
+
+#prorrogacaoR{
+    position: absolute;
+    left: 20%;
+    top: 52%;
+}
+
+#resumoR{
+    position: absolute;
+    left: 5%;
+    top: 64%;
+}
+
+#campusR{
+    position: absolute;
+    left: 59%;
+    top: 38%;
+}
+
+#posts{
+    position: absolute;
+    transform: translate(55%);
+    top: 75%;
+    width: 45%;
+    height: 50%;
+    border-radius: 15px;
+}
+
+.post{    
+    width: 220px;
+    height: 200px;
+
+}
+
+@media (max-width: 1000px) {
+
+#barra{
+    height: fit-content;
+    display:grid;
+    grid-template-rows: repeat(12, 20px); ;
+    grid-template-columns: 80lvw;    
+}
+#superior{
+    grid-template-rows: 20% 80%;
+}
+.linha{
+    align-self:baseline;
+    height:1.5px;
+    width:100%;
+    background-color:#386641;
+}
+
+#perfil{
+    position: absolute;
+    transform: translate(8%);
+    top: 52%;
+    width: 85%;
+    height: 60%;
+    background-color: #98AE9C;
+    border-radius: 15px;
+}
+
+#fotoProjeto{
+    
+    width: 80px;
+    height: 80px;
+}
+
+body{
+        font-size: 14px;
+    }
+
+#posts{
+    position: absolute;
+    transform: translate(15%);
+    top: 115%;
+    width: 80%;
+    height: 60%;
+}
+
+.post{    
+    width: 200px;
+    height: 180px;
+
+}
+
+
+
+
+}
+
+@media (max-width: 500px) {
+    body{
+        font-size: 12px;
+    }
+    #barra{
+    grid-template-rows: repeat(2, 50px); 
+    grid-template-columns: 90px 5px 90px 5px 200px 5px;
+    justify-items: center;
+    }
+    .linha{
+    align-self:center;
+    height:60%;
+    width:2px;
+    background-color:#386641;
+    }
+    #superior{
+    grid-template-rows: 35% 65%;
+    }
+
+    #perfil{
+    position: absolute;
+    transform: translate(2%);
+    top: 33%;
+    width: 95%;
+    height: 60%;
+    background-color: #98AE9C;
+    border-radius: 15px;
+}
+
+#fotoProjeto{
+    
+    width: 75px;
+    height: 75px;
+}
+
+body{
+        font-size: 14px;
+    }
+
+#posts{
+    position: absolute;
+    transform: translate(10%);
+    top: 95%;
+    width: 95%;   
+}
+
+.post{    
+    width: 200px;
+    height: 180px;
+}
+}
+</style>
 <body>
-   
-    <div id="verde1">
-        <img id="A" src="Fundo e A/Variant3.png">
-        <div id="pesquisa">
-            <div id="quadrado">
-                <img id="lupa" src="Component 8.png">
-                <img id="x" src="Component 10.png">
+    
+    <header>
+        <div id="superior"> 
+            
+            <div id="faixa">
+                <div id="pesquisa">
+                    <img src="images/Component 8.png" style="height: 25px;width:25px;margin: 8px;" alt="lupa">
+                    <img src="images/Component 10.png" style="height: 23px;width:23px; margin-left: 220px; margin-bottom: 8px;" alt="x">
+                </div>
+                <img src="images/Variant3.png" style="height:60px; width:60px; margin:15px; align-self:center;" alt="logo">
             </div>
+
+            <div id="barra">
+                <div>Início</div>
+                <div class="linha"></div>
+                <div >Artigo</div>
+                <div class="linha"></div>
+                <div>Publicações</div>
+                <div class="linha"></div>
+                <div>Notícias</div>
+                <div class="linha"></div>
+                <div >Câmpus</div>
+                <div class="linha"></div>
+                <div style="white-space: nowrap;"><span>Áreas de conhecimento</span></div>
+            </div>
+            
         </div>
-        <div id="verde2">
-           <p id="barra"> <b>Início   |   Artigos   |   Publicações   |   Notícias   |   Câmpus   |   Áreas de conhecimento</b></p>
+
+    </header>
+    <div id="container">
+
+        <div id="perfil">
+            <div class="escrita" id="fotoProjeto"></div>
+            <div class="escrita" id="nome">Nome do projeto *************************************</div>
+            <div class="escrita" id="coordena">Coordenador :</div>
+            <div class="escrita" id="bols">Bolsistas:</div>
+            <div class="escrita" id="cocoord">Cocoordendor:</div>
+            <div class="escrita" id="inicio">Início:</div>
+            <div class="escrita" id="fim">Fim:</div>
+            <div class="escrita" id="prorrogacao">prorrogação:</div>
+            <div class="escrita" id="campus">Câmpus:</div>
+            <div class="escrita" id="resumo">Resumo:</div>
+    
+            <div class="escrita2" id="coordenaR">nome coordenador</div>
+            <div class="escrita2" id="bolsR">nome bolsistas</div>
+            <div class="escrita2" id="cocoordR">nome cocoordendor</div>
+            <div class="escrita2" id="inicioR">xx/xx/xxxx</div>
+            <div class="escrita2" id="fimR">xx/xx/xxxx</div>
+            <div class="escrita2" id="prorrogacaoR">xx/xx/xxxx</div>
+            <div class="escrita2" id="campusR"> nome câmpus</div>
+            <div class="escrita2" id="resumoR">resumo do projeto</div>
         </div>
+
+        <div id="posts">
+            <img class="post" src="images/img.png" alt="Post">
+            <img class="post" src="images/img.png" alt="Post">
+            <img class="post" src="images/img.png" alt="Post">
+            <img class="post" src="images/img.png" alt="Post">
+            <img class="post" src="images/img.png" alt="Post">
+            <img class="post" src="images/img.png" alt="Post">
+            <img class="post" src="images/img.png" alt="Post">
+            <img class="post" src="images/img.png" alt="Post">
+            <img class="post" src="images/img.png" alt="Post">
+        </div>
+        
     </div>
-
-    <div id="perfil">
-        <div class="escrita" id="fotoProjeto"></div>
-        <div class="escrita" id="nome">Nome do projeto *************************************</div>
-        <div class="escrita" id="coordena">Coordenador :</div>
-        <div class="escrita" id="bols">Bolsistas:</div>
-        <div class="escrita" id="cocoord">Cocoordendor:</div>
-        <div class="escrita" id="inicio">Início:</div>
-        <div class="escrita" id="fim">Fim:</div>
-        <div class="escrita" id="prorrogacao">prorrogação:</div>
-        <div class="escrita" id="campus">Câmpus:</div>
-        <div class="escrita" id="resumo">Resumo:</div>
-
-        <div class="escrita2" id="coordenaR">nome coordenador</div>
-        <div class="escrita2" id="bolsR">nome bolsistas</div>
-        <div class="escrita2" id="cocoordR">nome cocoordendor</div>
-        <div class="escrita2" id="inicioR">xx/xx/xxxx</div>
-        <div class="escrita2" id="fimR">xx/xx/xxxx</div>
-        <div class="escrita2" id="prorrogacaoR">xx/xx/xxxx</div>
-        <div class="escrita2" id="campusR"> nome câmpus</div>
-        <div class="escrita2" id="resumoR">resumo do projeto</div>
-    </div>
-
-
-    <div id="projeto">
-        <p id="txtCampus"><b>------------------------------------------------------------------------ CÂMPUS ------------------------------------------------------------------------</b></p>
-        <p class="lista"><b>Nome do câmpus</b></p>
-        <div class="linha"></div>
-
-    </div>
-
-
+    
 </body>
 </html>
