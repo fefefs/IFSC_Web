@@ -6,7 +6,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="rota" method="post">
+    <form action="rota.php?rota=autenticacao" method="post">
         <label for="email">login</label>
         <input type="email" id="email" name="email">
 

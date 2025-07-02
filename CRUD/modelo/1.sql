@@ -8,7 +8,7 @@ create table if not exists usuarios(
 );
 
 create table if not exists produtos(
-    id int auto_increment not null,
+    id int auto_increment not null primary key,
     nome varchar(200) not null,
     valor decimal(7,2)
 );
