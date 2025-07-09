@@ -1,0 +1,4 @@
+As tags são
+
+<?php
+?>
