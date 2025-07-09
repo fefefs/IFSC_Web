@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>barquinho</title>
 </head>
 <style>
     
@@ -35,6 +35,8 @@
         
         #barco{
             animation: mover 8s infinite linear;
+            height: 300px;
+            width: 350px;
         }
 
     #ceu{
@@ -43,31 +45,21 @@
         background-image: image("ceu.jpg");
     }
     #mar{
-        height:30lvh;
+        height:50lvh;
         width:100lvw;
-        background-color: rgb(21, 69, 113);
+        background-color: #08107a;
     }
     
     #nuvem1{
         position: absolute;
         top: 30%;
-        height:100px;
-        width:300px;
-        background-color: rgb(255, 255, 255);
-        border-radius: 40%;
         animation: vento 20s infinite linear;
-        box-shadow: 5px 10px 10px rgb(86, 86, 86);
 
     }
     #nuvem2{
         position: absolute;
         top: 20%;
-        height:100px;
-        width:300px;
-        background-color: rgb(255, 255, 255);
-        border-radius: 40%;
         animation: vento 15s infinite linear;
-        box-shadow: 5px 10px 10px rgb(148, 148, 148);
     }
     img{
         bottom: 20%;
@@ -81,10 +73,10 @@
     
     <div id="ceu">
         <img src="imgs/ceu.jpg" alt="ceu" style="width:100lvw; height:70lvh;">
-        <div id="nuvem1"></div>
-        <div id="nuvem2"></div>
+        <img id="nuvem1" src="imgs/nuvem.png" alt="nuvem" style="height:100px; width:300px;">
+        <img id="nuvem2" src="imgs/nuvem.png" alt="nuvem" style="height:100px; width:300px;">
     
-    <img src="imgs/barquinho.png" id="barquinho" alt="barquinho">
+    <img src="imgs/barquinho.png" id="barco" alt="barquinho">
 </div>
     
     <div id="mar">
