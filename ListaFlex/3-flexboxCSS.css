@@ -1,0 +1,62 @@
+/* Reset e tipografia */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+}
+
+.container {
+  width: 340px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.container h1 {
+  padding: 16px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.user-card:last-child {
+  border-bottom: none;
+}
+
+.user-nome {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+.user-endereco {
+  font-size: 0.9rem;
+  color: #666;
+}

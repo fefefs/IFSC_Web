@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Frog</title>
+
+    <style>
+        table, tr,td{
+            border: 2px solid #15930e;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: #a6e6a4e3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explicação dos niveis do jogo FlexFrog</h1>
+    <table>
+  <thead>
+    <tr>
+      <th>Nível</th>
+      <th>CSS Aplicado</th>
+      <th>Explicação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>justify-content: flex-end;</td>
+      <td>Alinha todos os itens ao final (direita) do contêiner</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>justify-content: center;</td>
+      <td>Centraliza horizontalmente todos os itens</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>justify-content: space-around;</td>
+      <td>Distribui espaços iguais ao redor de cada item</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>justify-content: space-between;</td>
+      <td>Space uniforme apenas entre itens, sem margem nas bordas</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>align-items: flex-end;</td>
+      <td>Alinha verticalmente todos os itens na parte inferior</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>
+        justify-content: center;
+        <br>
+        align-items: center;
+      </td>
+      <td>Centraliza itens horizontal e verticalmente</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>
+        justify-content: space-around;<br>
+        align-items: flex-end;
+      </td>
+      <td>Espaça horizontalmente e alinha verticalmente ao fundo</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>flex-direction: row-reverse;</td>
+      <td>Inverte a ordem dos itens na linha (direita→esquerda)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>flex-direction: column;</td>
+      <td>Altera o fluxo para coluna (itens empilhados verticalmente)</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>
+        flex-direction: row-reverse;
+        <br>
+        justify-content: flex-end;
+      </td>
+      <td>Inverte linha e alinha todos os itens ao final do contêiner</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>
+        flex-direction: column;
+        <br>
+        justify-content: flex-end;
+      </td>
+      <td>Empilha coluna e alinha itens ao final (embaixo)</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>
+        flex-direction: column-reverse;
+        <br>
+        justify-content: space-between;
+      </td>
+      <td>Inverte coluna e distribui espaço entre itens</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>
+        flex-direction: row-reverse;
+        <br>
+        justify-content: center;
+        <br>
+        align-items: flex-end;
+      </td>
+      <td>Inverte linha, centraliza e alinha vertical ao fundo</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>.yellow { order: 1; }</td>
+      <td>Move o item amarelo para depois dos demais</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>.red { order: -1; }</td>
+      <td>Coloca o item vermelho antes dos demais</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>.yellow { align-self: flex-end; }</td>
+      <td>Alinha somente o item amarelo na parte inferior</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>
+        .yellow { align-self: flex-end; }
+        <br>
+        #pond { order: 1; }
+      </td>
+      <td>Alinha o amarelo ao fundo e move o contêiner para segunda posição</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>#pond { flex-wrap: wrap; }</td>
+      <td>Permite que itens quebrem linha ao não caberem</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>
+        #pond { flex-wrap: wrap; }
+        <br>
+        flex-direction: column-reverse;
+      </td>
+      <td>Inverte coluna e permite múltiplas colunas com wrap</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>#pond { flex-flow: column wrap; }</td>
+      <td>Combina coluna com quebra automática de linha</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>#pond { align-content: flex-start; }</td>
+      <td>Alinha todo o bloco de linhas ao topo</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>#pond { align-content: flex-end; }</td>
+      <td>Alinha todo o bloco de linhas à base</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>
+        flex-direction: column-reverse;
+        <br>
+        align-content: center;
+      </td>
+      <td>Inverte coluna e centraliza o agrupamento de linhas</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>
+        flex-flow: column-reverse wrap-reverse;
+        <br>
+        justify-content: center;
+        <br>
+        align-content: space-between;
+      </td>
+      <td>Inverte coluna e wrap, centraliza itens e distribui linhas</td>
+    </tr>
+  </tbody>
+</table>
+    
+</body>
+</html>
